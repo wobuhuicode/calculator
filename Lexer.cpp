@@ -3,7 +3,6 @@
 using namespace std;
 
 Lexer::Token_Type Lexer::get_token(){
-//	delete curr_number;
 	string ch;
 	switch (*expr) {
 	case '+': expr++; return curr_T = PLUS;
@@ -28,4 +27,4 @@ Lexer::Token_Type Lexer::get_token(){
 	default:
 		return curr_T = Not_Define;
 	}
-} //��ȡ
+} //»ñÈ¡
